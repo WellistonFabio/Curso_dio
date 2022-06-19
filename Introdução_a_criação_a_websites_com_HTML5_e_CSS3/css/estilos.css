@@ -1,0 +1,39 @@
+body {
+    background: #ccc;
+}
+
+.photo {
+    border-radius: 50%;
+    border: 3px solid #4b4b4b;
+    box
+}
+
+#title,
+.subtitle,
+.post_title {
+    color: #2708f5;
+}
+
+.post_title {
+    font-size: 1rem;
+    font-style: italic;
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.post {
+    background: #f7f7f7;
+    padding: 15px;
+    border: 3px solid #4b4b4b;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.post_content {
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.post_imagen {
+    margin-bottom: 15px;
+}
