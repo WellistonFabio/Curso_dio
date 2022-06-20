@@ -1,0 +1,83 @@
+<!--Flex - Esta propriedade é um atalho ou abreviação de escrita para as propriedades: grow,shrink e basis -->
+<!DOCTYPE html>
+<html lang="pr-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Flex (grow,shrink e basis</title>
+    <style>
+        .container-titulo {
+            display: flex;
+            border: 1px solid black;
+            justify-content: center;
+        }
+        
+        .container-titulo p {
+            text-align: center;
+        }
+        
+        .container {
+            display: flex;
+            border: 1px solid black;
+            max-width: 400px;
+            margin-bottom: 10px;
+        }
+        
+        .item {
+            background-color: brown;
+            color: white;
+            font-size: 24px;
+            text-align: center;
+            margin: 5px;
+        }
+        
+        .flex-1 {
+            /*grow = 1, shrink = 1 e basis = 0*/
+            flex: 1;
+        }
+        
+        .lagura {
+            width: 200px;
+            /*min-width: 250px;*/
+        }
+        
+        .flex-2 {
+            /*grow = 2, shrink = 1 e basis = 0*/
+            flex: 2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-titulo">
+        <p>Flex - Esta propriedade é um atalho ou abreviação de escrita para as propriedades: grow,shrink e basis</p>
+    </div>
+    <p>flex: 1</p>
+    <div class="container">
+        <div class="item flex-1">A</div>
+        <div class="item flex-1">BBB</div>
+        <div class="item flex-1">CC</div>
+        <div class="item flex-1">C</div>
+        <div class="item flex-1">EF</div>
+    </div>
+    <p>flex: mix</p>
+    <div class="container">
+        <div class="item flex-1">A</div>
+        <div class="item flex-2">BBB</div>
+        <div class="item flex-2">CC</div>
+        <div class="item flex-1">C</div>
+        <div class="item flex-1">EF</div>
+    </div>
+    <p>width ignorado -> basis = 0</p>
+    <div class="container">
+        <div class="item flex-1 lagura">A</div>
+        <div class="item flex-1 lagura">BBB</div>
+        <div class="item flex-1 lagura">CC</div>
+        <div class="item flex-1 lagura">C</div>
+        <div class="item flex-1 lagura">EF</div>
+    </div>
+</body>
+
+</html>
